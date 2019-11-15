@@ -1,7 +1,8 @@
 'use strict';
 
-function Airport(){
+function Airport(capacity = 10){
   this._hanger = [];
+  this._maxCapacity = capacity;
 
 }
 

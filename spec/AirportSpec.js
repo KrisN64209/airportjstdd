@@ -29,7 +29,7 @@ describe('Airport', function(){
   });
 
   it('maximum capacity has a value an creating an instance of Airport', function(){
-    expect(airport.maxCapacity).toEqual(10)
+    expect(airport._maxCapacity).toEqual(10)
   });
 
 
