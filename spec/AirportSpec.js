@@ -3,6 +3,7 @@
 describe('Airport', function(){
   var airport;
   var plane;
+  var highCapacityAirport;
 
   beforeEach(function(){
     airport = new Airport();
@@ -31,8 +32,7 @@ describe('Airport', function(){
   it('maximum capacity has a value an creating an instance of Airport', function(){
     expect(airport._maxCapacity).toEqual(10);
   });
-
-
+  
   it('cannot let a plane land if hanger is full', function(){
     var i;
     for(i = 0; i < 10; i++){
@@ -41,7 +41,12 @@ describe('Airport', function(){
     expect(function(){
       airport.landing(plane);
     }).toThrowError(`Cannot land: The hanger is full`);
-
   });
+  it('can change the default capacity', function(){
+    highCapacityAirport = new Airport(15);
+    expect(airport._maxCapacity).toEqual(15);
+  });
+
+  
 
 });
