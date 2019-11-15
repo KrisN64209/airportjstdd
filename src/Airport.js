@@ -11,3 +11,7 @@ Airport.prototype.hanger = function(){
 Airport.prototype.landing = function(plane){
   this._hanger.push(plane);
 };
+
+Airport.prototype.takingOff = function(plane){
+  this._hanger.pop(plane);
+};
