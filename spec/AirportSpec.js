@@ -44,7 +44,7 @@ describe('Airport', function(){
   });
   it('can change the default capacity', function(){
     highCapacityAirport = new Airport(15);
-    expect(airport._maxCapacity).toEqual(15);
+    expect(highCapacityAirport._maxCapacity).toEqual(15);
   });
 
   
