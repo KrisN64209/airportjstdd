@@ -25,7 +25,7 @@ describe('Airport', function(){
   });
 
   it('hanger has a maximum capacity', function(){
-    expect(airport.maxCapacity).toExist()
+    expect(airport._maxCapacity).toBeDefined()
   });
 
   it('maximum capacity has a value an creating an instance of Airport', function(){
