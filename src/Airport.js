@@ -2,6 +2,7 @@
 
 function Airport(){
   this._hanger = [];
+
 }
 
 Airport.prototype.hanger = function(){
