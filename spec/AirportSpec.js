@@ -24,7 +24,7 @@ describe('Airport', function(){
     expect(airport.hanger()).toEqual([]);
   });
 
-  it('has a maximum capacity', function(){
+  it('hanger has a maximum capacity', function(){
     expect(airport.maxCapacity).toExist()
   });
 
