@@ -14,7 +14,7 @@ Airport.prototype.landing = function(plane){
   if(this._hanger.length < this._maxCapacity){
     this._hanger.push(plane);
   } else {
-    throw new Error(`Cannot land: The hanger is full`)
+    throw new Error(`Cannot land: The hanger is full`);
   }
 };
 

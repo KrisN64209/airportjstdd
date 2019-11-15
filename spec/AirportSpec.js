@@ -42,6 +42,7 @@ describe('Airport', function(){
       airport.landing(plane);
     }).toThrowError(`Cannot land: The hanger is full`);
   });
+  
   it('can change the default capacity', function(){
     highCapacityAirport = new Airport(15);
     expect(highCapacityAirport._maxCapacity).toEqual(15);
