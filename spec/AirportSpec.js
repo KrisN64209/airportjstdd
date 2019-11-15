@@ -25,11 +25,11 @@ describe('Airport', function(){
   });
 
   it('hanger has a maximum capacity', function(){
-    expect(airport._maxCapacity).toBeDefined()
+    expect(airport._maxCapacity).toBeDefined();
   });
 
   it('maximum capacity has a value an creating an instance of Airport', function(){
-    expect(airport._maxCapacity).toEqual(10)
+    expect(airport._maxCapacity).toEqual(10);
   });
 
 
@@ -40,7 +40,8 @@ describe('Airport', function(){
     }
     expect(function(){
       airport.landing(plane);
-    }).toThrowError(`Cannot land: The hanger is full`)
+    }).toThrowError(`Cannot land: The hanger is full`);
+
   });
 
 });

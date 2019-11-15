@@ -11,7 +11,11 @@ Airport.prototype.hanger = function(){
 };
 
 Airport.prototype.landing = function(plane){
-  this._hanger.push(plane);
+  if(this._hanger.length < this._maxCapacity){
+    this._hanger.push(plane);
+  } else {
+    throw new Error(`Cannot land: The hanger is full`)
+  }
 };
 
 Airport.prototype.takingOff = function(plane){
