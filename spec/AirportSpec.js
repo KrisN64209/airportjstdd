@@ -24,7 +24,11 @@ describe('Airport', function(){
     expect(airport.hanger()).toEqual([]);
   });
 
-  it('cannot let a plane land if hangger is full', function(){
+  it('has a maximum capacity', function(){
+    expect(airport.maxCapacity).toExist()
+  });
+
+  it('cannot let a plane land if hanger is full', function(){
     var i;
     for(i = 0; i < 10; i++){
       airport.landing(plane);
